@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label id="countLabel">0</label><br>
-    <div id="btnContainer">
-    <button id="decreaseBtn" class="buttons">decrease</button>
-    <button id="resetBtn" class="buttons">reset</button>
-    <button id="increaseBtn" class="buttons">increase</button>
-    </div>
+    <input type="checkbox" id="myCheckbox">
+    <label for ="myCheckbox">Subscribe</label><br>
+
+    <input type = "radio" id="visaBtn" name="card">
+    <label for ="visaBtn">Visa </label><br>
     
+    <input type="radio" id="mastercardBtn" name="card">
+
+    <label for = "masterCardBtn" > MasterCard</label><br>
+
+
+      <input type="radio" id="paypalBtn" name="card">
+
+    <label for = "paypalBtn" >Paypal</label><br>
+    <button type="submit" id="mySubmit">submit</button>
+
+    <p id="subresult"></p>
+    <p id="paymentresult"></p>
+
+
 
     
     <script src="index.js"> </script>

@@ -69,7 +69,7 @@ document.getElementById("mysubmit").onclick = function(){
   
 }*/
 
-const decreaseBtn = document.getElementById("decreaseBtn");
+/*const decreaseBtn = document.getElementById("decreaseBtn");
 const resetBtn = document.getElementById("resetBtn");
 const increaseBtn = document.getElementById("increaseBtn");
 
@@ -90,7 +90,92 @@ decreaseBtn.onclick = function(){
 resetBtn.onclick = function(){
   count=0;
   countLabel.textContent= count;
-}
+}*/
+// random number in js
+
+/*let randomNum= Math.floor(Math.random()*5);
+console.log(randomNum);*/
+
+
+/*const myButton = document.getElementById("button1");
+const Label1 = document.getElementById("Label1");
+const Label2 = document.getElementById("Label2");
+const Label3 = document.getElementById("Label3");
+
+let randomNum1;
+let randomNum2;
+let randomNum3;
+
+
+const min = 1;
+const max = 6; 
+
+myButton.onclick =  function(){
+  randomNum1 = Math.floor(Math.random()*max) + min;
+  randomNum2 = Math.floor(Math.random()*max) + min;
+  randomNum3 = Math.floor(Math.random()*max) + min;
+  Label1.textContent = randomNum1;
+  Label2.textContent = randomNum2;
+  Label3.textContent = randomNum3;
+
+}*/
+
+const myCheckbox = document.getElementById("myCheckbox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const paypalBtn = document.getElementById("paypalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const subresult= document.getElementById("subresult");
+const paymentresult = document.getElementById("paymentresult");
+
+
+
+
+mySubmit.onclick = function(){
+     
+       if(myCheckbox.checked){
+          subresult.textContext = `you are subscribed`;}
+       else {
+           subresult.textContext = `you are subscribed`;}
+
+        if(visaBtn.checked)   {
+          paymentresult.textContent=`you are paying visa`;
+        }
+
+        else if(masterCardBtn.checked)   {
+          paymentresult.textContent=`you are paying mastercard`;
+        }
+
+        else if(paypalBtn.checked)   {
+          paymentresult.textContent=`you are paying paypal`;
+        }
+
+
+        else {
+          paymentresult.textContent=`you must select a payment `;
+        }
+
+
+       }
+
+       
+      
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
