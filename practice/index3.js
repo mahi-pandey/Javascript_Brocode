@@ -236,7 +236,7 @@ const cube=numbers.map((element)=>Math.pow(element,3));
 document.getElementById("myP").innerHTML=cube.join("-");*/
 
 //Object properties
-const person = {
+/*const person = {
       firstName: "Mahima",
       lastName: "Squarepants",
       age: 30,
@@ -267,6 +267,137 @@ const person1={
 
 document.getElementById("myH1").innerHTML=person1.firstName;*/
  
+/*class Product {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    displayProduct() {
+        console.log(`product: ${this.name}`);
+        console.log(`price: $${this.price}`);
+    }
+
+    calculateTotal(salesTax) {
+        return this.price + (this.price * salesTax);
+    }
+}
+
+const salesTax = 0.05;
+const product1 = new Product("shirt", 15);
+const product2=new Product("pants",45);
+
+product2.displayProduct();
+
+const total = product2.calculateTotal(salesTax);
+console.log(`Total price: $${total.toFixed(2)}`);*/
+// Static keyword in class 
+/*class MathUse{
+    static PI = 3.1415;
+
+    static getDiameter(radius){
+
+        return 2*  radius;
+
+
+    }
+
+    static getCircumference(radius){
+         return 2* PI * radius;
+    }
+}
+
+
+console.log(MathUse.PI);
+console.log(MathUse.getDiameter(10));
+console.log(MathUse.getCircumference(10));*/
+
+//Inheritance-from parent to child class
+
+/*class Animal{
+    alive=true;
+
+    eat(){
+        console.log(`this ${this.name} is eating `);
+
+    }
+
+    sleep(){
+        console.log(`this ${this.name} is sleeping `);
+        
+    }
+
+}
+
+class Rabbit extends Animal{
+    name="rabbit";
+
+    run(){
+        console.log(`this ${this.name} is running`);
+    }
+}
+
+class Fish extends Animal{
+    name="fish";
+
+
+    swim(){
+        console.log(`this ${this.name} is swimming`);
+    }
+
+}
+
+
+
+const rabbit= new Rabbit();
+const fish= new Fish();
+
+
+console.log(fish.alive);
+fish.eat()
+fish.swim()*/
+// Super
+
+class Animal {
+    constructor(name, age) {
+        this.name = name; // You missed assignment here
+        this.age = age;
+    }
+
+    move(speed) {
+        console.log(`The ${this.name} moves at a speed of ${speed}.`);
+    }
+}
+
+class Rabbit extends Animal {
+    constructor(name, age, runSpeed) {
+        super(name, age);
+        this.runSpeed = runSpeed;
+    }
+
+    run() {
+        console.log(`This ${this.name} is running at ${this.runSpeed} km/h.`);
+    }
+}
+
+class Fish extends Animal {
+    constructor(name, age, swimSpeed) {
+        super(name, age);
+        this.swimSpeed = swimSpeed;
+    }
+
+    swim() {
+        console.log(`This ${this.name} is swimming at ${this.swimSpeed} km/h.`);
+    }
+}
+
+// Creating instances
+const rabbit = new Rabbit("Rabbit", 2, 20);
+const fish = new Fish("Fish", 1, 5);
+
+// Calling methods
+rabbit.run();  // Output: This Rabbit is running at 20 km/h.
+fish.swim();   // Output: This Fish is swimming at 5 km/h.
 
 
 

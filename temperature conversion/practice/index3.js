@@ -236,7 +236,7 @@ const cube=numbers.map((element)=>Math.pow(element,3));
 document.getElementById("myP").innerHTML=cube.join("-");*/
 
 //Object properties
-const person = {
+/*const person = {
       firstName: "Mahima",
       lastName: "Squarepants",
       age: 30,
@@ -267,6 +267,7 @@ const person1={
 
 document.getElementById("myH1").innerHTML=person1.firstName;*/
  
+
 
 
 
