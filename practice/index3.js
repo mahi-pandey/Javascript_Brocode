@@ -357,8 +357,7 @@ console.log(fish.alive);
 fish.eat()
 fish.swim()*/
 // Super
-
-class Animal {
+/*class Animal {
     constructor(name, age) {
         this.name = name; // You missed assignment here
         this.age = age;
@@ -397,7 +396,45 @@ const fish = new Fish("Fish", 1, 5);
 
 // Calling methods
 rabbit.run();  // Output: This Rabbit is running at 20 km/h.
-fish.swim();   // Output: This Fish is swimming at 5 km/h.
+fish.swim();   // Output: This Fish is swimming at 5 km/h.*/
+
+
+
+
+//swapping of two variables
+/*let a=3;
+let b=5;
+
+[a,b]=[b,a]
+
+console.log(a);
+console.log(b);*/
+
+// swap elements in array
+
+
+
+
+//const colors = ['red', 'blue', 'green', 'white'];
+
+// Swapping the first and last elements using destructuring
+//[colors[0], colors[3]] = [colors[3], colors[0]];
+
+//console.log(colors); // Output: [ 'white', 'blue', 'green', 'red' ]
+
+//destructuring in function parameter
+function displayPerson({firstName,lastName,age,job}){
+    console.log(`name:${firstName} ${lastName}, age:${age}`)
+}
+
+
+const person1={firstName:'Mahima',
+    lastName:'Pandey',
+    age:20,
+
+}
+
+displayPerson(person1);
 
 
 
