@@ -423,7 +423,7 @@ console.log(b);*/
 //console.log(colors); // Output: [ 'white', 'blue', 'green', 'red' ]
 
 //destructuring in function parameter
-function displayPerson({firstName,lastName,age,job}){
+/*function displayPerson({firstName,lastName,age,job}){
     console.log(`name:${firstName} ${lastName}, age:${age}`)
 }
 
@@ -434,8 +434,175 @@ const person1={firstName:'Mahima',
 
 }
 
-displayPerson(person1);
+displayPerson(person1);*/
+//48-arrays of objects 
 
+/*const fruits=[{name:"apple",color:"red",calories:95},
+    {name:"orange",color:"yellow",calories:95},
+    {name:"banana",color:"orange",calories:89},
+    {name:"litchi",color:"green",calories:80},
+    {name:"mango",color:"purple",calories:80}]
+
+/*console.log(fruits[1].name);
+
+fruits.push({name:"grapes",color:"purple",calories:80});
+console.log(fruits);
+fruits.pop;
+
+fruits.splice(1,2);
+//for each
+
+
+fruits.forEach(fruits=>console.log(fruits.name));
+//map
+
+const fruitname=fruits.map(fruits=>fruits.calories);
+const fruitcolor=fruits.map(fruits=>fruits.name);
+console.log(fruitname);
+console.log(fruitcolor);*/
+
+//filter
+//const yellowfruits=fruits.filter(fruit=>fruit.color==='purple');
+//const lowcalorie=fruits.filter(fruit=>fruit.calories<80);
+
+//console.log(yellowfruits);
+
+//  console.log(lowcalorie);
+
+// reduce
+
+/*const maxFruit=fruits.reduce((max,fruit)=>fruit.calories > max.calories?fruit:max);
+const minFruit=fruits.reduce((min,fruit)=>fruit.calories>min.calories?fruit:min);
+console.log(maxFruit);
+console.log(minFruit);*/
+
+//  suffling of cards
+
+
+/*const cards=['A',2,3,4,5,6,7,8,9,10,'J','Q','K'];
+shuffle(cards);
+console.log(cards);
+
+function shuffle(array){
+    for(let i = array.length-1; i>0; i--){
+        const random = Math.floor(Math.random()*(i+1));
+        [array[i],array[random]]=[array[random],array[i]];
+    }
+}*/
+
+//const date=new Date(2012,11,2,3,4,4);
+//console.log(date); 
+
+//0-january 1-feb like this
+/*const date=new Date();
+const year= date.getFullYear();
+const Month=date.getMonth();
+const hour=date.getHours();
+const day=date.getDate();
+const minutes=date.getMinutes(); 
+const seconds=date.getSeconds();
+const dayofWeek=date.getDay();
+
+
+console.log(year);
+console.log(Month);
+console.log(day);
+console.log(minutes);
+console.log(seconds);
+console.log(hour);
+console.log(dayofWeek);*/
+
+//setting the date
+
+
+
+/*const date=new Date();
+date.setFullYear(2024);
+date.setMonth(0);
+date.setDate(1);
+date.setHours(2);
+date.setMinutes(3);
+date.setSeconds(4);
+
+console.log(date);*/
+
+//comparing the dates
+
+/*const date1 = new Date("2023-12-31");
+const date2 = new Date("2023-12-30");
+
+if (date1 > date2) {
+    console.log("happy new year"); 
+}*/
+
+// closure in javscript 
+//Example1
+/*function outer(){
+    let message='hello';
+    function inner(){
+        console.log(message);
+
+    }
+
+    inner();//this will access variable of outer function .   
+}
+outer();*/
+
+//SetTimeout function
+//example 1
+/*function sayHello(){
+    window.alert('hello')
+}
+setTimeout(sayHello,3000)
+//example2
+
+setTimeout(function(){window.alert("Hello")},3000);
+//example3
+
+setTimeout(()=>window.alert("hi"),3000);
+//clearTimeout(timeoutId)=can cancel a timeout before it triggers*/
+
+
+//const timeoutId = setTimeout(()=>window.alert("hello"),3000);
+//clearTimeout(timeoutId);
+/*let timeoutid;
+function startTimer(){
+    timeoutid=setTimeout(()=>window.alert("hello"),2000);
+    console.log("Starter");
+
+}
+
+function clearTimer(){
+    clearTimeout(timeoutid);
+    console.log("cleared"); 
+}
+
+startTimer();
+clearTimer();*/
+
+
+/*console.time("test");
+
+for(let i = 0; i<100000; i++){
+    //do some code here
+}
+
+console.timeEnd("test");*/
+
+function loadData(){
+
+    console.time("loadData")
+
+    for(let i=0;i<1000000;i++){
+        //pretend to load some data
+
+    }
+
+
+
+}
+
+ 
 
 
 
