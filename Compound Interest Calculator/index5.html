@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interest & EMI Calculator</title>
+  <link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+
+  <h1>Finance Calculator</h1>
+
+  <div class="input-section">
+    <input id="principal" type="number" placeholder="Principal (₹)" />
+    <input id="rate" type="number" placeholder="Rate (%)" />
+    <input id="years" type="number" placeholder="Years" />
+  </div>
+
+  <div class="section">
+    <button onclick="calculate()">Calculate Compound Interest</button>
+    <p id="total-amount">Result: —</p>
+  </div>
+
+  <div class="section">
+    <button onclick="calculateEMI()">Calculate EMI</button>
+    <p id="emi-result">EMI: —</p>
+  </div>
+
+  <script src="index5.js"></script>
+</body>
+</html>
