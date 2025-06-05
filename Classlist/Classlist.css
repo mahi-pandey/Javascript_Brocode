@@ -1,0 +1,30 @@
+#myButton {
+    font-size: 4rem;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+}
+
+.enabled {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.hover {
+    box-shadow: 0px 0px 10px red;
+    font-weight: bold;
+}
+
+
+.disabled{
+    background-color: aqua;
+    color:rgb(255, 196, 208);
+
+}
+
+#myH1{
+    font-size: 5rem;
+    
+
+}

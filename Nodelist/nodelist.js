@@ -51,7 +51,7 @@ console.log(buttons);*/
 
 //remove an element
 
-let buttons = document.querySelectorAll(".myButtons");
+/*let buttons = document.querySelectorAll(".myButtons");
 
 buttons.forEach(button=>{
     button.addEventListener("click",event=>{
@@ -60,7 +60,7 @@ buttons.forEach(button=>{
         console.log(buttons);
 
     })
-})
+})*/
 
  
 
